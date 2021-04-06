@@ -1,2 +1,42 @@
-body
-	box-sizing: border-box
+@import '_colors'
+@import '_interface'
+
+/** Navbar **/
+
+.navbar
+	&-block
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__logo 
+
+	&__info 
+		display: flex
+		align-items: center
+	&__contacts
+		display: flex
+		flex-direction: column
+		text-align: right
+	&__address
+		margin-bottom: 10px
+	&__phone
+		text-decoration: none
+		font-size: 20px
+		font-weight: 400
+		color: $text-color
+		font-weight: bold
+	&__button
+		margin-left: 30px
+
+@media screen and ( max-width:768px )
+	.navbar
+		&__contacts
+			display: none
+		&__button
+			font-size: 12px
+			padding: 15px 26px
+		&__logo
+			width: 90px	
+
+
