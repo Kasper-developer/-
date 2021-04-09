@@ -41,13 +41,14 @@
 
 /** HERO **/
 
-.hero 
+.hero
+	background-color: $secondary
 	padding: 50px 0
 .hero-block 
 	display: flex
 .hero-text 
-	flex-basis: 45%
-	padding-right: 130px
+	flex-basis: 50%
+	padding-right: 100px
 	&__title
 		font-size: 41px
 		line-height: 55px
@@ -66,6 +67,8 @@
 		display: flex
 		align-items: center
 		margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
 
 	&__image 
 		width: 40px
@@ -110,4 +113,7 @@
 			&__item
 				margin-bottom: 20px
 			&__image
-				margin-right: 25px		
+				margin-right: 25px
+
+/** Секция Offer **/
+@import 'offer'
