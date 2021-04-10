@@ -71,6 +71,9 @@ img {
   font-size: 15px;
   border-radius: 10px;
 }
+.input:focus {
+  border: 1px solid #ffd200;
+}
 
 /** Navbar **/
 .navbar-block {
